@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to speech converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#96CEB4]">
+    <main class="h-screen">
+        <section class="card-container container-lg ">
+            <div class="flex items-center justify-center min-h-screen">
+                <div class="card bg-base-100 w-96 shadow-xl py-10">
+                    <div class="card-body">
+                        <h2 class="text-3xl text-center font-bold">Text to speech</h2>
+                    </div>
+                    <div class="flex justify-center">
+                        <textarea id="text-area" class="textarea textarea-success w-80 h-48 my-5" placeholder="your text..."></textarea>
+                    </div>
+    
+                    <div class="text-center">
+                        <button id="convert-btn" class="btn bg-sky-500 text-white w-full max-w-xs">Speak</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
